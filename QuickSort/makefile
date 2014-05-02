@@ -1,4 +1,5 @@
 target:
+	javac *.java
 	scalac *.scala
 
 clean:

@@ -8,7 +8,7 @@ object Analysis extends App {
 
 	//best
 	for(i <- 1 to 500000 by 1000) {
-		val arr = Array.range(0, i, 100)
+		val arr = Array.range(0, i, 1)
 		val last = System.nanoTime
 		sort(arr)
 		val now = System.nanoTime
@@ -18,7 +18,7 @@ object Analysis extends App {
 
 	//avg
 	for(i <- 1 to 500000 by 1000) {
-		val arr = Array.fill(i/100){scala.util.Random.nextInt(i)} 
+		val arr = Array.fill(i){scala.util.Random.nextInt(i)} 
 		val last = System.nanoTime
 		sort(arr)
 		val now = System.nanoTime
@@ -28,7 +28,7 @@ object Analysis extends App {
 
 	//worst
 	for(i <- 1 to 500000 by 1000) {
-		val arr = Array.range(i, 0, -100)
+		val arr = Array.range(i, 0, -1)
 		val last = System.nanoTime
 		sort(arr)
 		val now = System.nanoTime
